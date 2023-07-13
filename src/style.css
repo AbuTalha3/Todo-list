@@ -42,7 +42,7 @@
  #add-button {
     padding: 7px 9px;
     border: none;
-    background-color: cyan;
+    background-color: rgb(126, 239, 74);
  }
 
  .todos-container {
@@ -81,10 +81,10 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  font-size: 0.8rem;
-  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   width: 100%;
-  background-color: rgb(212, 235, 255);
+  background-color: rgb(137, 247, 104);
   height: 50px;
   position: absolute;
   bottom: 0;
