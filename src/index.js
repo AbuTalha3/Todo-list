@@ -5,7 +5,17 @@ const textInputField = document.querySelector('#text-input-feild');
 const addButton = document.querySelector('#add-button');
 const todosContainer = document.querySelector('.todos-container');
 
-const todos = [];
+const todos = [
+  {
+    text: "gym", completed: false, index: 1,
+  },
+  {
+    text: "car wash", completed: false, index: 2,
+  }
+];
+
+// Initial rendering of existing todos
+todos.forEach(renderTodoItem);
 
 addButton.addEventListener('click', () => {
   if (textInputField.value.trim().length === '') {
@@ -16,6 +26,7 @@ addButton.addEventListener('click', () => {
   const todoItem = {
     text: textInputField.value,
     completed: false,
+    index: todos.length + 1,
   };
 
   // add todo item to array
@@ -42,7 +53,7 @@ function renderTodoItem(todoItem) {
   checkbox.checked = todoItem.completed;
   todoItemContainer.prepend(checkbox);
 
-  // craete p element and Id = todo-text
+  // create p element and Id = todo-text
   const todoText = document.createElement('p');
   todoText.Id = 'todo-text';
   todoText.innerText = todoItem.text;
@@ -54,7 +65,7 @@ function renderTodoItem(todoItem) {
     checkbox.checked = todoItem.completed;
   });
 
-  // create button add id = edit = button
+  // create button add id = edit-button
   const editButton = document.createElement('button');
   editButton.id = 'edit-button';
   // create fa-edit icon
@@ -63,7 +74,7 @@ function renderTodoItem(todoItem) {
   editButton.appendChild(editIcon);
   todoItemContainer.appendChild(editButton);
 
-  // add click event ti edit button here
+  // add click event to edit button here
   editButton.addEventListener('click', () => {
     textInputField.value = todoText.innerText;
     const parent = editButton.parentElement;
