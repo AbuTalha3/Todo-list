@@ -7,11 +7,11 @@ const todosContainer = document.querySelector('.todos-container');
 
 const todos = [
   {
-    text: "gym", completed: false, index: 1,
+    text: 'gym', completed: false, index: 1,
   },
   {
-    text: "car wash", completed: false, index: 2,
-  }
+    text: 'car wash', completed: false, index: 2,
+  },
 ];
 
 // Initial rendering of existing todos
