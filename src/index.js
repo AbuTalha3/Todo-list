@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 import './style.css';
 
 const textInputField = document.querySelector('#text-input-feild');
@@ -7,7 +8,7 @@ const todosContainer = document.querySelector('.todos-container');
 const todos = [];
 
 addButton.addEventListener('click', () => {
-  if (textInputField.value.trim().length == '') {
+  if (textInputField.value.trim().length === '') {
     return;
   }
 
