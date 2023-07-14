@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let todos = JSON.parse(localStorage.getItem('todos')) || [];
 
-  // Initial rendering of existing todos
   todos.forEach(renderTodoItem);
 
   addButton.addEventListener('click', (e) => {
