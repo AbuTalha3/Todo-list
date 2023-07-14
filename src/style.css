@@ -12,7 +12,7 @@
   align-items: center;
 }
 
- .container {
+.container {
   background-color: #fff;
   border-radius: 5px;
   width: 400px;
@@ -36,12 +36,12 @@ h2 {
 
 .todo-item-container {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .todo-item-container p {
- width: 280px;
- overflow: auto;
+  width: 280px;
+  overflow: auto;
 }
 
 .clear-it {
@@ -61,7 +61,7 @@ h2 {
   border: none;
   cursor: pointer;
   outline: none;
-} 
+}
 
 .heading {
   display: flex;
@@ -83,21 +83,22 @@ h2 {
 }
 
 #todo-form input {
-  width: 330px; 
+  width: 330px;
   border: none;
   font-style: italic;
   outline: none;
   padding: 8px;
 }
 
-hr { border: 0.5px solid #ccc;
-    margin: 0 0 10px 0;
-     height: 1px;
-    }
+hr {
+  border: 0.5px solid #ccc;
+  margin: 0 0 10px 0;
+  height: 1px;
+}
 
-    #todo-form button {
-      background: none;
-      border: none;
-      outline: none;
-      cursor: pointer;
-    }
+#todo-form button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
