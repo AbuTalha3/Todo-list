@@ -12,13 +12,15 @@
   align-items: center;
 }
 
-.container {
+ .container {
   background-color: #fff;
   border-radius: 5px;
   width: 400px;
-  height: 600px;
+  height: auto;
   padding: 15px;
   position: relative;
+  display: grid;
+  gap: 16px;
 }
 
 h2 {
@@ -32,49 +34,14 @@ h2 {
   margin-bottom: 15px;
 }
 
-#text-input-feild {
-  width: 95%;
-  padding: 10px;
-  font-size: 25px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-#add-button {
-  padding: 7px 9px;
-  border: none;
-  background-color: rgb(126, 239, 74);
-}
-
-.todos-container {
-  overflow-y: scroll;
-}
-
 .todo-item-container {
   display: flex;
-  margin-bottom: 1.5px;
+  justify-content:space-around;
 }
 
-#todo-text {
-  width: 100%;
-  font-size: 20px;
-  letter-spacing: 1.5px;
-  user-select: none;
-}
-
-.line-through {
-  text-decoration: line-through;
-  color: blue;
-}
-
-#edit-button,
-#delete-button {
-  padding: 5px;
-  border: none;
-  display: flex;
-  justify-content: flex-end;
-  background-color: transparent;
-  width: 95%;
+.todo-item-container p {
+ width: 280px;
+ overflow: auto;
 }
 
 .clear-it {
@@ -87,9 +54,6 @@ h2 {
   width: 100%;
   background-color: rgb(137, 247, 104);
   height: 50px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .clearer {
@@ -97,4 +61,43 @@ h2 {
   border: none;
   cursor: pointer;
   outline: none;
+} 
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.heading h2 {
+  font-size: 16px;
+}
+
+.heading span {
+  cursor: pointer;
+}
+
+#todo-form {
+  display: flex;
+  gap: 8px;
+}
+
+#todo-form input {
+  width: 330px; 
+  border: none;
+  font-style: italic;
+  outline: none;
+  padding: 8px;
+}
+
+hr { border: 0.5px solid #ccc;
+    margin: 0 0 10px 0;
+     height: 1px;
+    }
+
+    #todo-form button {
+      background: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }

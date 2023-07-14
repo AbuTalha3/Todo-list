@@ -89,6 +89,11 @@ Run this command:
   cd Todo-list
   npm install
 ```
+<!-- START APP -->
+### Start app
+While using app for the first time. After installing the project, run the following command:
+
+- npm run start
 
 ### Usage
 
