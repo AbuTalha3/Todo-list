@@ -1,5 +1,6 @@
 /* eslint-disable no-use-before-define */
 import './style.css';
+
 const textInputField = document.querySelector('#text-input-feild');
 const addButton = document.querySelector('#add-button');
 const todosContainer = document.querySelector('.todos-container');
