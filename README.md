@@ -1,4 +1,3 @@
-# Todo-list
 <a name="readme-top"></a>
 
 # 📗 Table of Contents
@@ -90,6 +89,11 @@ Run this command:
   cd Todo-list
   npm install
 ```
+<!-- START APP -->
+### Start app
+While using app for the first time. After installing the project, run the following command:
+
+- npm run start
 
 ### Usage
 
@@ -147,7 +151,7 @@ I have added the linters or tests in order to avoid anykind of typos and ensure 
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../issues/).
+Feel free to check the [issues page](https://github.com/AbuTalha3/Todo-list/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -171,7 +175,7 @@ I would like to thank Microverse.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
+ main
