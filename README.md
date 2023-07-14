@@ -138,10 +138,12 @@ I have added the linters or tests in order to avoid anykind of typos and ensure 
 
 <!-- FUTURE FEATURES -->
 
-## 🔭 Future Features <a name="future-features"></a>
+## 🔭 Features <a name="Todo list features"></a>
 
-- [ ] Add header and footer to index.html
-- [ ] Add more styles to style.css
+- you can add a new item.
+- You can remove or edit a selected item.
+- You can mark a selected item as complete.
+- You can remove all items marked as complete at once
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
