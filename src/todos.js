@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let todos = JSON.parse(localStorage.getItem('todos')) || [];
 
+  // Initial rendering of existing todos
   todos.forEach(renderTodoItem);
 
   addButton.addEventListener('click', (e) => {
@@ -96,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
       parent.parentElement.removeChild(parent);
       const todoItemId = parent.id;
       removeHorizontalLine(todoItemId);
-      todos = todos.filter((todo) => todo.index !== parseInt(parent.id.split('-')[2]));
+      todos = todos.filter((todo) => todo.index !== parseInt(parent.id.split('-')[2], 10));
       saveTodosToLocalStorage();
     });
   });
