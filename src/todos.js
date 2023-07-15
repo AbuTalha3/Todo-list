@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let todos = JSON.parse(localStorage.getItem('todos')) || [];
 
-  // Initial rendering of existing todos
   todos.forEach(renderTodoItem);
 
   addButton.addEventListener('click', (e) => {
@@ -72,10 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
       parent.parentElement.removeChild(parent);
       removeHorizontalLine(todoItemId);
 
-      // Remove the deleted task from the todos array
       todos = todos.filter((item) => item.index !== todoItem.index);
 
-      // Update indexes of remaining tasks
       todos.forEach((item, index) => {
         item.index = index + 1;
         const itemId = `todo-item-${item.index}`;
@@ -97,7 +94,6 @@ document.addEventListener('DOMContentLoaded', () => {
       todoItem.completed = checkbox.checked;
       saveTodosToLocalStorage();
 
-      // Update indexes of remaining tasks
       todos.forEach((item, index) => {
         item.index = index + 1;
         const itemId = `todo-item-${item.index}`;
