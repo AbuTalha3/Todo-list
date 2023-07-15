@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
-    "build": "webpack",
-    "watch": "webpack --watch"
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
@@ -24,11 +23,9 @@
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
-    "stylelint-scss": "^3.21.0",    
-    "webpack-dev-server": "^4.15.1"
-  },
-  "dependencies": {
+    "stylelint-scss": "^3.21.0",
     "webpack": "^5.88.1",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
