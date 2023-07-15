@@ -126,16 +126,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   clearButton.addEventListener('click', () => {
     todos = todos.filter((item) => !item.completed);
-  
+
     todosContainer.innerHTML = '';
     todos.forEach((todoItem, index) => {
       todoItem.index = index + 1;
       renderTodoItem(todoItem);
     });
-  
+
     saveTodosToLocalStorage();
   });
-  
 
   function saveTodosToLocalStorage() {
     localStorage.setItem('todos', JSON.stringify(todos));
