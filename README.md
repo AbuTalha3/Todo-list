@@ -6,6 +6,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
+    - [Live Link](#live-link)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -57,6 +58,10 @@ Todo list project, where you can add you daily chores and commitments, and remov
 - Add global styling variables to style.css file.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### Live Link <a name="live-link"></a>
+
+https://abutalha3.github.io/Todo-list/dist/
 
 <!-- GETTING STARTED -->
 
