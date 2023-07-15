@@ -2,7 +2,7 @@
 import './style.css';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const textInputField = document.querySelector('#text-input-feild');
+  const textInputField = document.querySelector('#text-input-field');
   const addButton = document.querySelector('#add-button');
   const todosContainer = document.querySelector('.todos-container');
 
@@ -71,8 +71,46 @@ document.addEventListener('DOMContentLoaded', () => {
       const parent = deleteButton.parentElement;
       parent.parentElement.removeChild(parent);
       removeHorizontalLine(todoItemId);
+
+      // Remove the deleted task from the todos array
       todos = todos.filter((item) => item.index !== todoItem.index);
+
+      // Update indexes of remaining tasks
+      todos.forEach((item, index) => {
+        item.index = index + 1;
+        const itemId = `todo-item-${item.index}`;
+        const todoItemContainer = document.getElementById(itemId);
+        if (todoItemContainer) {
+          const todoText = todoItemContainer.querySelector('#todo-text');
+          const hrId = `${itemId}-hr`;
+          const horizontalLine = document.getElementById(hrId);
+          todoItemContainer.id = `todo-item-${item.index}`;
+          todoText.id = 'todo-text';
+          horizontalLine.id = `${itemId}-hr`;
+        }
+      });
+
       saveTodosToLocalStorage();
+    });
+
+    checkbox.addEventListener('change', () => {
+      todoItem.completed = checkbox.checked;
+      saveTodosToLocalStorage();
+
+      // Update indexes of remaining tasks
+      todos.forEach((item, index) => {
+        item.index = index + 1;
+        const itemId = `todo-item-${item.index}`;
+        const todoItemContainer = document.getElementById(itemId);
+        if (todoItemContainer) {
+          const todoText = todoItemContainer.querySelector('#todo-text');
+          const hrId = `${itemId}-hr`;
+          const horizontalLine = document.getElementById(hrId);
+          todoItemContainer.id = `todo-item-${item.index}`;
+          todoText.id = 'todo-text';
+          horizontalLine.id = `${itemId}-hr`;
+        }
+      });
     });
 
     const hr = document.createElement('hr');
@@ -91,16 +129,17 @@ document.addEventListener('DOMContentLoaded', () => {
   const clearButton = document.querySelector('.clearer');
 
   clearButton.addEventListener('click', () => {
-    const completedItems = document.querySelectorAll('.todo-item-container input[type="checkbox"]:checked');
-    completedItems.forEach((item) => {
-      const parent = item.parentElement;
-      parent.parentElement.removeChild(parent);
-      const todoItemId = parent.id;
-      removeHorizontalLine(todoItemId);
-      todos = todos.filter((todo) => todo.index !== parseInt(parent.id.split('-')[2], 10));
-      saveTodosToLocalStorage();
+    todos = todos.filter((item) => !item.completed);
+  
+    todosContainer.innerHTML = '';
+    todos.forEach((todoItem, index) => {
+      todoItem.index = index + 1;
+      renderTodoItem(todoItem);
     });
+  
+    saveTodosToLocalStorage();
   });
+  
 
   function saveTodosToLocalStorage() {
     localStorage.setItem('todos', JSON.stringify(todos));
