@@ -1,5 +1,6 @@
 /* eslint-disable no-use-before-define */
 import './style.css';
+import { updateStatus, clearCompleted } from '../modules/todosStatus.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const textInputField = document.querySelector('#text-input-field');
@@ -92,21 +93,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     checkbox.addEventListener('change', () => {
       todoItem.completed = checkbox.checked;
+      updateStatus(todoItem.index, checkbox.checked);
       saveTodosToLocalStorage();
-
-      todos.forEach((item, index) => {
-        item.index = index + 1;
-        const itemId = `todo-item-${item.index}`;
-        const todoItemContainer = document.getElementById(itemId);
-        if (todoItemContainer) {
-          const todoText = todoItemContainer.querySelector('#todo-text');
-          const hrId = `${itemId}-hr`;
-          const horizontalLine = document.getElementById(hrId);
-          todoItemContainer.id = `todo-item-${item.index}`;
-          todoText.id = 'todo-text';
-          horizontalLine.id = `${itemId}-hr`;
-        }
-      });
     });
 
     const hr = document.createElement('hr');
@@ -125,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const clearButton = document.querySelector('.clearer');
 
   clearButton.addEventListener('click', () => {
-    todos = todos.filter((item) => !item.completed);
+    todos = clearCompleted(todos);
 
     todosContainer.innerHTML = '';
     todos.forEach((todoItem, index) => {
