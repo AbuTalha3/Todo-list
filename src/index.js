@@ -1,14 +1,14 @@
 /* eslint-disable no-use-before-define */
 import './style.css';
+import { updateStatus, clearCompleted } from '../modules/todosStatus.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-  const textInputField = document.querySelector('#text-input-feild');
+  const textInputField = document.querySelector('#text-input-field');
   const addButton = document.querySelector('#add-button');
   const todosContainer = document.querySelector('.todos-container');
 
-  let todos = [];
+  let todos = JSON.parse(localStorage.getItem('todos')) || [];
 
-  // Initial rendering of existing todos
   todos.forEach(renderTodoItem);
 
   addButton.addEventListener('click', (e) => {
@@ -24,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     todos.push(todoItem);
+    saveTodosToLocalStorage();
 
     textInputField.value = '';
 
@@ -56,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     todoText.addEventListener('blur', () => {
       todoText.contentEditable = false;
       todoItem.text = todoText.innerText;
+      saveTodosToLocalStorage();
     });
 
     const deleteButton = document.createElement('button');
@@ -69,6 +71,30 @@ document.addEventListener('DOMContentLoaded', () => {
       const parent = deleteButton.parentElement;
       parent.parentElement.removeChild(parent);
       removeHorizontalLine(todoItemId);
+
+      todos = todos.filter((item) => item.index !== todoItem.index);
+
+      todos.forEach((item, index) => {
+        item.index = index + 1;
+        const itemId = `todo-item-${item.index}`;
+        const todoItemContainer = document.getElementById(itemId);
+        if (todoItemContainer) {
+          const todoText = todoItemContainer.querySelector('#todo-text');
+          const hrId = `${itemId}-hr`;
+          const horizontalLine = document.getElementById(hrId);
+          todoItemContainer.id = `todo-item-${item.index}`;
+          todoText.id = 'todo-text';
+          horizontalLine.id = `${itemId}-hr`;
+        }
+      });
+
+      saveTodosToLocalStorage();
+    });
+
+    checkbox.addEventListener('change', () => {
+      todoItem.completed = checkbox.checked;
+      updateStatus(todoItem.index, checkbox.checked);
+      saveTodosToLocalStorage();
     });
 
     const hr = document.createElement('hr');
@@ -87,20 +113,27 @@ document.addEventListener('DOMContentLoaded', () => {
   const clearButton = document.querySelector('.clearer');
 
   clearButton.addEventListener('click', () => {
-    const completedItems = document.querySelectorAll('.todo-item-container input[type="checkbox"]:checked');
-    completedItems.forEach((item) => {
-      const parent = item.parentElement;
-      parent.parentElement.removeChild(parent);
-      const todoItemId = parent.id;
-      removeHorizontalLine(todoItemId);
+    todos = clearCompleted(todos);
+
+    todosContainer.innerHTML = '';
+    todos.forEach((todoItem, index) => {
+      todoItem.index = index + 1;
+      renderTodoItem(todoItem);
     });
+
+    saveTodosToLocalStorage();
   });
+
+  function saveTodosToLocalStorage() {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }
 
   function refreshIt() {
     const refreshIcon = document.querySelector('.refresh-it');
     refreshIcon.addEventListener('click', () => {
       todos = [];
       todosContainer.innerHTML = '';
+      localStorage.removeItem('todos');
     });
   }
 
