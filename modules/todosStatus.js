@@ -1,4 +1,4 @@
-// statusUpdates.js
+/* eslint-disable no-use-before-define */
 
 export function updateStatus(index, completed) {
   const todos = JSON.parse(localStorage.getItem('todos')) || [];

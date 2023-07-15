@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 import './style.css';
 import { updateStatus, clearCompleted } from '../modules/todosStatus.js';
 
