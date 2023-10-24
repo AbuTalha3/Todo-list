@@ -23,7 +23,7 @@
 
 # 📖 Todo list Project <a name="about-project"></a>
 
-Todo list project, where you can add you daily chores and commitments, and remove them as you are done with them. It allows you to edit your tasks,The app is developed using Html, CSS and Javascript
+Todo list project, where you can add your daily chores and commitments, and remove them as you are done with them. It allows you to edit your tasks, Now you don't have to remember everything by heart, this ToDo App will do that for you. The app is developed using HTML, CSS, and Javascript.
 
 ## 🛠 Built With <a name="built-with"></a>
 
