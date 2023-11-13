@@ -30,7 +30,7 @@ Todo list project, where you can add your daily chores and commitments, and remo
 
 1-HTML
 2-CSS
-3-JS
+3-JavaScript
 4-Webpack
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -49,14 +49,14 @@ Todo list project, where you can add your daily chores and commitments, and remo
 ### Key Features <a name="key-features"></a>
 
 
-- Webpack Tempalate 
+- Webpack Template 
 - Add index.html file.
 - Add style.css file.
 - Add index.js file.
-- Add tempalate (Webpack)
+- Add template (Webpack)
 - Add Linters.
-- Add Header to the index.html file.
-- Add global styling variables to style.css file.
+- Add a Header to the index.html file.
+- Add global styling variables to the style.css file.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
