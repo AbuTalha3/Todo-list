@@ -109,7 +109,7 @@ While using the app for the first time. After installing the project, run the fo
 
 ### Run Linters
 
-I have added the linters or tests in order to avoid any kind of typos and ensure the good practices in this project. So while using this repository if you need to check your work in html and css you can use below commands
+I have added the linters or tests in order to avoid any kind of typos and ensure the good practices in this project. So while using this repository if you need to check your work in html and CSS you can use below commands
 
 - in order to run the linter test on index.html:
 
