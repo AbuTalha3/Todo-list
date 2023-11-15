@@ -54,7 +54,7 @@ Todo list project, where you can add your daily chores and commitments, and remo
 - Add style.css file.
 - Add index.js file.
 - Add template (Webpack)
-- Add Linters.
+- Add Linters and configuration files.
 - Add a Header to the index.html file.
 - Add global styling variables to the style.css file.
 
@@ -74,6 +74,7 @@ https://abutalha3.github.io/Todo-list/dist/
 2-Code Editor
 3-Git & Github
 4-Node.js
+5- VS Code
 
 ### Setup
 
