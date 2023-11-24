@@ -105,7 +105,7 @@ While using the app for the first time. After installing the project, run the fo
 ### Usage
 
 - In order to use this project you either create a branch to add more features.
-- But in order to run the project open index.html with live server
+- But in order to run the project open index.html with a live server
 
 ### Run Linters
 
@@ -147,7 +147,7 @@ I have added the linters or tests in order to avoid any kind of typos and ensure
 
 ## 🔭 Features <a name="Todo list features"></a>
 
-#Todo List is a small app made with HTML, CSS and JavaScript which you can use as a ready Recknor where you can save your daily tasks, mark them complete and remove the completed tasks In which...
+#Todo List is a small app made with HTML, CSS, and JavaScript which you can use as a ready Recknor where you can save your daily tasks, mark them complete and remove the completed tasks In which...
 - you can add a new item.
 - You can remove or edit a selected item.
 - You can mark a selected item as complete.
