@@ -114,7 +114,7 @@ I have added the linters or tests in order to avoid any kind of typos and ensure
 - in order to run the linter test on index.html:
 
 ```sh
- npx hint .
+ npx hint.
 ```
 
 - in order to run the linter test on stylesheets:
