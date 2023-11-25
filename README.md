@@ -169,7 +169,7 @@ Feel free to check the [issues page](https://github.com/AbuTalha3/Todo-list/issu
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project just give it a star and follow on GitHub-
+If you like this project just give it a star and follow it on GitHub-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -177,7 +177,7 @@ If you like this project just give it a star and follow on GitHub-
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse.
+I would like to thank Microverse for providing us to learn programing.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
