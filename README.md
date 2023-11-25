@@ -24,7 +24,7 @@
 # 📖 Todo list Project <a name="about-project"></a>
 
 Todo list project, where you can add your daily chores and commitments, and remove them as you are done with them. It allows you to edit your tasks, Now you don't have to remember everything by heart, this ToDo App will do that for you. The app is developed using HTML, CSS, and Javascript. It can work on different screen sizes.About
-"You don't have to remember every that you can have on your finger. tips" ;-) Todo List is a small app made with HTML, CSS, and JavaScript which you can use as a ready Recknor where you can save your daily tasks, mark them complete and remove the completed tasks.
+"You don't have to remember every that you can have on your finger. tips" ;-) Todo List is a small app made with HTML, CSS, and JavaScript which you can use as a ready Recknor where you can save your daily tasks, mark them complete, and remove the completed tasks.
 
 ## 🛠 Built With <a name="built-with"></a>
 
