@@ -74,7 +74,7 @@ https://abutalha3.github.io/Todo-list/dist/
 2-Code Editor
 3-Git & Github
 4-Node.js
-5- VS Code
+5-VS Code
 
 ### Setup
 
@@ -109,7 +109,7 @@ While using the app for the first time. After installing the project, run the fo
 
 ### Run Linters
 
-I have added the linter or tests in order to avoid any kind of typos and ensure the good practices in this project. So while using this repository if you need to check your work in HTML and CSS you can use the below commands
+I have added the linter or tests in order to avoid any kind of typos and ensure the good practices in this project. while using this repository if you need to check your work in HTML and CSS you can use the below commands
 
 - in order to run the linter test on index.html:
 
