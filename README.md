@@ -28,7 +28,7 @@ Todo list project, where you can add your daily chores and commitments, and remo
 
 ## 🛠 Built With <a name="built-with"></a>
 
-1-HTML
+1-Hyper Text Markup Language
 2-CSS
 3-JavaScript
 4-Webpack
