@@ -32,6 +32,7 @@ Todo list project, where you can add your daily chores and commitments, and remo
 2-Cascading Style Sheet
 3-JavaScript
 4-Webpack
+5-VS Code
 
 ### Tech Stack <a name="tech-stack"></a>
 
