@@ -126,7 +126,7 @@ I have added the linter or tests in order to avoid any kind of typos and ensure 
 
 ### Deployment
 
-- You can easily use GitHub pages, Netlify or Vercel to deploy your project
+- You can easily use GitHub pages, Netlify, or Vercel to deploy your project
   <a href="https://docs.github.com/en/pages/quickstart">Useful link about Github Pages</a>>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
