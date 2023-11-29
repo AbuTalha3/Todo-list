@@ -178,7 +178,7 @@ If you like this project just give it a star and follow it on GitHub-
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for providing us to learn programing.
+I want to thank Microverse for providing us opportunity to learn programming.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
