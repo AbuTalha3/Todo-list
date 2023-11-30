@@ -160,7 +160,7 @@ I have added the linter or tests in order to avoid any kind of typos and ensure 
 
 ## 🤝 Contributing <a name="contributing"></a>
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are always welcome!
 
 Feel free to check the [issues page](https://github.com/AbuTalha3/Todo-list/issues).
 
