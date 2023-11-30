@@ -118,7 +118,7 @@ I have added the linter or tests in order to avoid any kind of typos and ensure 
  npx hint.
 ```
 
-- in order to run the linter test on stylesheets:
+- in order to run the linter test on  the stylesheets:
 
 ```sh
  npx styleint "**/*.{css,scss}"
