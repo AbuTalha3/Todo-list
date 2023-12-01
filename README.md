@@ -148,7 +148,7 @@ I have added the linter or tests in order to avoid any kind of typos and ensure 
 
 ## 🔭 Features <a name="Todo list features"></a>
 
-#Todo List is an app made with the help of HTML, Cascading Style Sheet, and JavaScript which you can use as a ready Recknor where you can save your daily tasks, mark them complete and remove the completed tasks In which...
+#Todo List is an app made with the help of HTML, Cascading Style Sheets, and JavaScript which you can use as a ready Recknor where you can save your daily tasks, mark them complete and remove the completed tasks In which...
 - you can add a new item.
 - You can remove or edit a selected item.
 - You can mark a selected item as complete.
