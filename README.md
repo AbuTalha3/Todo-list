@@ -80,7 +80,7 @@ https://abutalha3.github.io/Todo-list/dist/
 6- `Basic Knowledge of:-`
   - `Hyper Text Markup Language`
   - `Cascading Style Sheet`
-  - JavaScript
+  - `JavaScript`
   - Webpack
 
 ### Setup
