@@ -72,7 +72,7 @@ https://abutalha3.github.io/Todo-list/dist/
 
 ### Prerequisites
 
-1-Web Browser
+1-`Web Browser`
 2-Code Editor
 3-Git & Github
 4-Node.js
