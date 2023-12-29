@@ -81,7 +81,7 @@ https://abutalha3.github.io/Todo-list/dist/
   - `Hyper Text Markup Language`
   - `Cascading Style Sheet`
   - `JavaScript`
-  - Webpack
+  - `Webpack`
 
 ### Setup
 
