@@ -75,7 +75,7 @@ https://abutalha3.github.io/Todo-list/dist/
 1-`Web Browser`
 2-`Code Editor`
 3-`Git & Github`
-4-Node.js
+4-`Node.js`
 5-VS Code
 6- Basic Knowledge of:-
   - Hyper Text Markup Language
