@@ -111,7 +111,7 @@ While using the app for the first time. After installing the project, run the fo
 
 ### Usage
 
-- In order to use this project you either create a branch to add more features.
+- In order to use this project you either `create a branch` to add more features.
 - But in order to run the project open index.html with a live server
 - Use of Webpack recommended.
 
