@@ -57,7 +57,7 @@ Todo list project, where you can add your daily chores and commitments, and remo
 - Add `index.js` file
 - Add template (Webpack)
 - Add Linters and configuration files.
-- Add a Header to the index.html file.
+- Add a Header to `index.html`file
 - Add global styling variables to the style.css file.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
