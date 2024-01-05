@@ -53,7 +53,7 @@ Todo list project, where you can add your daily chores and commitments, and remo
 
 - Webpack Template 
 - Add `index.html.` file.
-- Add style.css file.
+- Add `style.css` file
 - Add index.js file.
 - Add template (Webpack)
 - Add Linters and configuration files.
