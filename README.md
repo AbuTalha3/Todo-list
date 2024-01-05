@@ -97,7 +97,7 @@ Run this Command:
 ### Install
 
 First, you need to install the node package files
-Run this command:
+Run the following command:
 
 ```sh
   cd Todo-list
