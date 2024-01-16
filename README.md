@@ -31,7 +31,7 @@ Todo list *project*, where you can add your daily chores and commitments, and re
 
 1-`*Hyper Text Markup Language*`
 2-`Cascading Style Sheet`
-3-JavaScript
+3-`JavaScript`
 4-Webpack
 5-VS Code
 
