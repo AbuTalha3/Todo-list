@@ -55,7 +55,7 @@ Todo list *project*, where you can add your daily chores and commitments, and re
 - Add `index.html.` file.
 - Add `style.css` file
 - Add `index.js` file
-- Add template (Webpack)
+- Add template `(Webpack)`
 - Add Linters and configuration files.
 - Add a Header to `index.html`file
 - Add global styling variables to the style.css file.
