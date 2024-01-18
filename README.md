@@ -105,7 +105,7 @@ Run the following command:
 ```
 <!-- START APP -->
 ### Start app
-While using the app for the first time. After installing the project, run the following command:
+While using the app for the first time. After `installing` the project, run the following command:
 
 - npm run start
 
